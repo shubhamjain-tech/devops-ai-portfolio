@@ -136,8 +136,10 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    
     image: "awsThreeTier",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
+    featured: true,
   },
 
   {
@@ -157,8 +159,9 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
     image: "eks",
+    featured: true,
   },
 
   {
@@ -178,8 +181,9 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
     image: "terraform",
+    featured: true,
   },
 
   {
@@ -199,8 +203,9 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
     image: "cicd",
+    featured: true,
   },
 
   {
@@ -219,8 +224,9 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
     image: "monitoring",
+    featured: true,
   },
 
   {
@@ -238,8 +244,9 @@ const portfolioData = {
     ],
 
     github: "https://github.com/shubhamjain-tech",
-    demo: "",
+    demo: "https://shubhamjain-tech.github.io/devops-ai-portfolio/",
     image: "githubActions",
+    featured: true,
   },
 ],
 

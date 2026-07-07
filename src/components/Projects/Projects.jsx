@@ -22,25 +22,28 @@ const Projects = () => {
 
             <div
               key={project.id}
-              className="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition duration-300 shadow-lg"
+              className="bg-slate-800 rounded-xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/20 transition duration-300"
             >
 
+              {/* Project Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-52 object-cover"
+                className="w-full h-56 object-cover hover:scale-105 transition duration-500"
               />
 
+              {/* Project Content */}
               <div className="p-6">
 
                 <h3 className="text-2xl font-semibold text-white">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 mt-4">
+                <p className="text-gray-400 mt-4 leading-7">
                   {project.description}
                 </p>
 
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mt-6">
 
                   {project.tech.map((item) => (
@@ -53,6 +56,31 @@ const Projects = () => {
                     </span>
 
                   ))}
+
+                </div>
+
+                {/* Buttons */}
+                <div className="flex gap-4 mt-8">
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 text-center bg-cyan-500 hover:bg-cyan-600 text-white py-2 rounded-lg font-medium transition"
+                  >
+                    GitHub
+                  </a>
+
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 text-center border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white py-2 rounded-lg font-medium transition"
+                    >
+                      Live Demo
+                    </a>
+                  )}
 
                 </div>
 
