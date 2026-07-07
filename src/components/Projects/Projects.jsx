@@ -25,13 +25,11 @@ const Projects = () => {
               className="bg-slate-800 rounded-xl overflow-hidden hover:scale-105 transition duration-300 shadow-lg"
             >
 
-              <div className="h-48 bg-slate-700 flex items-center justify-center">
-
-                <span className="text-gray-400">
-                  Project Screenshot
-                </span>
-
-              </div>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-52 object-cover"
+              />
 
               <div className="p-6">
 
