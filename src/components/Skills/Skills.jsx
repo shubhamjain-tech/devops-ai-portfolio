@@ -6,7 +6,7 @@ const Skills = () => {
       id="skills"
       className="bg-slate-950 py-24 px-6"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         <h2 className="text-center text-5xl font-bold text-cyan-400">
           Technical Skills
@@ -16,36 +16,31 @@ const Skills = () => {
           Technologies I work with
         </p>
 
-        <div className="mt-16 space-y-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
 
-          {portfolioData.skills.map((skill) => (
+          {portfolioData.skills.map((skill, index) => (
 
-            <div key={skill.name}>
+            <div
+              key={index}
+              className="bg-slate-800 rounded-xl p-6 hover:scale-105 transition duration-300"
+            >
 
-              <div className="flex justify-between mb-2">
+              <h3 className="text-xl font-semibold text-cyan-400 mb-5">
+                {skill.category}
+              </h3>
 
-                <span className="text-white font-medium">
+              <div className="flex flex-wrap gap-2">
 
-                  {skill.name}
+                {skill.items.map((item, i) => (
 
-                </span>
+                  <span
+                    key={i}
+                    className="bg-slate-700 text-gray-200 px-3 py-2 rounded-full text-sm"
+                  >
+                    {item}
+                  </span>
 
-                <span className="text-cyan-400">
-
-                  {skill.level}%
-
-                </span>
-
-              </div>
-
-              <div className="w-full h-3 bg-slate-800 rounded-full">
-
-                <div
-                  className="bg-cyan-400 h-3 rounded-full"
-                  style={{
-                    width: `${skill.level}%`,
-                  }}
-                ></div>
+                ))}
 
               </div>
 

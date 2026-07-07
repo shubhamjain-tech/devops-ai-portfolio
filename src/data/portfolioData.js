@@ -39,67 +39,76 @@ const portfolioData = {
   ],
 
   skills: [
-    {
-      name: "AWS",
-      level: 95,
-      category: "Cloud",
-    },
-
-    {
-      name: "Docker",
-      level: 95,
-      category: "Containers",
-    },
-
-    {
-      name: "Kubernetes",
-      level: 90,
-      category: "Containers",
-    },
-
-    {
-      name: "Terraform",
-      level: 90,
-      category: "IaC",
-    },
-
-    {
-      name: "Jenkins",
-      level: 95,
-      category: "CI/CD",
-    },
-
-    {
-      name: "Linux",
-      level: 90,
-      category: "OS",
-    },
-
-    {
-      name: "Git",
-      level: 95,
-      category: "Version Control",
-    },
-
-    {
-      name: "Python",
-      level: 75,
-      category: "Programming",
-    },
-
-    {
-      name: "Grafana",
-      level: 85,
-      category: "Monitoring",
-    },
-
-    {
-      name: "Prometheus",
-      level: 85,
-      category: "Monitoring",
-    },
-  ],
-
+  {
+    category: "☁ Cloud",
+    items: ["AWS", "Azure", "GCP"],
+  },
+  {
+    category: "⚙ DevOps & CI/CD",
+    items: [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "GitLab CI",
+    ],
+  },
+  {
+    category: "🏗 Infrastructure as Code",
+    items: [
+      "Terraform",
+      "Ansible",
+      "Helm",
+      "CloudFormation",
+    ],
+  },
+  {
+    category: "📊 Monitoring",
+    items: [
+      "Prometheus",
+      "Grafana",
+      "CloudWatch",
+      "ELK",
+    ],
+  },
+  {
+    category: "💻 Languages & OS",
+    items: [
+      "Linux",
+      "Bash",
+      "Python",
+    ],
+  },
+  {
+    category: "🗄 Databases",
+    items: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+    ],
+  },
+  {
+    category: "🔧 Version Control",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+    ],
+  },
+  {
+    category: "🤖 AI Tools",
+    items: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Claude",
+      "Gemini",
+      "Cursor",
+      "Amazon Q",
+      "Windsurf",
+    ],
+  },
+],
   projects: [
   {
     id: 1,
